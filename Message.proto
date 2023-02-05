@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+/* This service is between
+Client: Sending a request of type string "sendcommandflag"
+Server: Sending back a response array "data_array"
+*/
+service CommunicationService{
+  rpc Input (Request) returns (Response) {}
+
+}
+
+message Request {
+  string sendcommandflag = 1;
+}
+
+message Response {
+    repeated float data_array = 1;
+}

@@ -1,0 +1,27 @@
+Varun's Notes:
+
+Create a Conda environment: 
+"conda create --name environmentname python=3.7"
+
+Installing gRPC:
+python -m pip install grpcio
+python -m pip install grpcio-tools
+
+Generation gRPC code:
+python -m grpc_tools.protoc -I"location of the proto file" --python_out=. --pyi_out=. --grpc_python_out=. "location of the proto file + name of the proto file"
+
+Ip address format:
+format: f"{ipaddress}:" f"{port number}" 
+*note 
+a) The port number must be the same on both client and server side
+b) The clientscript will require the ip adress of the server device and vice-versa
+c) Always run the server script before the client script or else you will get and error
+
+
+About the Scripts,
+There are two communication protocols mentioned,
+1) Message.proto, Message_pb2_grpc, Message_pb2, Message_pb2.pyi, TestClient.py and TestServer.py
+this protocol is to send a string flag from the Client and receiveing an array from the Server.
+
+2)Message_2.proto, Message_2_pb2_grpc, Message_2_pb2, Message_2_pb2.pyi, TestClient_2.py and TestServer_2.py
+this protocol is to send an array from the Client and receiving Null from the Server
