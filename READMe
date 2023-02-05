@@ -1,5 +1,5 @@
 NOTE from--- Varun
-The reason I have created this script is to test the communication protocol. This is for learning purposes and I hope this script that I created may be helpful to others to understand gRPC communication easily.
+The reason I have created this script is to test the communication protocol. This is for learning purposes and I hope this script may be helpful to others to understand gRPC communication easily.
 Please refer the official gRPC documentation for more detailed information, I found this very useful "https://grpc.io/docs/languages/python/quickstart/"
 
 Varun's Notes:
